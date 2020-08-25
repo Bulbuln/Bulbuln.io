@@ -78,9 +78,9 @@ gulp.task('connect', function (done) {
 gulp.task('fonts', function() {
   return gulp.src([
     './node_modules/@fortawesome/fontawesome-free/webfonts/**/*',
-    './fonts/**/*',
+    '.fonts/**/*',
   ])
-    .pipe(gulp.dest('./dist/fonts'));
+    .pipe(gulp.dest('./distfonts'));
 });
 
 gulp.task('open', function(){
