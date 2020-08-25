@@ -1,0 +1,129 @@
+.footer-bottom {
+    background-color: #707070;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @include media-breakpoint-up('md') {
+        background-color: transparent;
+        width: 100%;
+        justify-content: flex-start;
+
+    }
+    
+    
+
+    h1 {
+        color: #FFFFFF;
+        font-family: 'Playfair Display';
+        font-style: normal;
+        font-size: 22px;
+        margin-top: 33px;
+        margin-bottom: 39px;
+    }
+
+    .bottom-container {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+
+        @include media-breakpoint-up('md') {
+            justify-content: flex-start;
+            width: 100%;
+            flex-direction: row;
+            margin-top: 0;
+    
+        }
+        a {
+            color: #FFFFFF;
+            text-transform: lowercase;
+            font-family: 'Roboto';
+            font-size: 16px;
+            @include media-breakpoint-up('md') {
+                color: #2B2B2B;
+                font-size: 22px;
+                font-family: 'Playfair Display';
+                letter-spacing: 0.33px;
+                font-style: normal;
+        
+            }
+        }
+
+        .about {
+            border-right: 1px solid #FFFFFF;
+            margin-right: 10px;
+            @include media-breakpoint-up('md') {
+                border: none;
+                margin-left: 157px;
+                margin-top: 40px;
+                
+        
+            }
+
+            li {
+                margin-right: 20px;
+                margin-top: 10px;
+                @include media-breakpoint-up('md') {
+                    margin: 0;
+                    white-space: nowrap;
+            
+                }
+            }
+        }
+
+        .footer-customer-info {
+            @include media-breakpoint-up('md') {
+                margin-left: 176px;
+                margin-top: 40px;
+                
+            }
+            li {
+                margin-left: 20px;
+                margin-top: 10px;
+                
+
+                @include media-breakpoint-up('md') {
+                    margin: 0;
+                    white-space: nowrap;
+            
+                }
+
+            }
+            
+
+        }
+        
+
+        .footer-contact {
+            @include media-breakpoint-up('md') {
+                margin-left: 284px;
+                margin-top: 40px;
+
+                li {
+                    margin: 0;
+
+                    &:last-child {
+                        text-decoration: underline;
+                    }
+                }
+
+                
+            }
+        }
+
+    }
+
+    .privacy-terms {
+
+        margin-top: 35px;
+        margin-bottom: 30px;
+        a {
+            color: #FFFFFF;
+            font-family: 'Roboto';
+            font-style: italic;
+            font-weight: lighter;
+            text-decoration: underline;
+        }
+    }
+    
+}
