@@ -60,7 +60,7 @@ gulp.task('html', function() {
 });
 
 gulp.task('img', function() {
-  return gulp.src('./img/**')
+  return gulp.src('.img/**')
     .pipe(copy('./dist'))
     .pipe(connect.reload());
 });
@@ -95,7 +95,7 @@ gulp.task('watch', function (done) {
   gulp.watch('./scss/**/*.scss', gulp.series('sass'));
   gulp.watch('./js/**/*.js', gulp.series('js'));
   gulp.watch('./html/**/*.html', gulp.series('html'));
-  gulp.watch('./img', gulp.series('img'));
+  gulp.watch('.img', gulp.series('img'));
 
   done();
 })
