@@ -1,0 +1,135 @@
+.header-top {
+    @include media-breakpoint-up('md') {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+   
+    .shipping-price {
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        border: 0.20000000298023224px solid #CCCCCC;
+
+        @include media-breakpoint-up('md') {
+            display: none;
+        }
+        p {
+            margin-top: 10px;
+            margin-bottom: 4px;
+            padding: 0 3px;
+            font-size: 14px;
+        }
+        
+    }
+
+    
+
+    .header-contact {
+        display: none;
+        @include media-breakpoint-up('md') {
+            display: flex;
+            margin-top: 43px;
+            width: auto;
+            margin-left: 421px;
+            ul {
+                display: flex;
+                justify-content: space-between;
+                li {
+                    padding-right: 30px;
+                    
+                }
+
+                a {
+                    color: #FFFFFF;
+                    font-size: 20px;
+                }
+                
+            }
+            p {
+                width: 200px;
+                .header-call-us {
+                    font-size: 16px;
+                    font-family: 'Playfair Display';
+                    
+                    color: white;
+                    ;
+                }
+            }
+            
+        }
+    }
+
+    .header-controls {
+        height: 54px;
+        width: 100%;
+        @include media-breakpoint-up('md') {
+            margin-top: 43px;
+            height: auto;
+            display: flex;
+            
+        }
+        .header-search {
+            display: none;
+            
+            @include media-breakpoint-up('md') {
+                display: block;
+                margin-left: 250px;
+                position: relative;
+                
+                .site-search {
+                    width: 254px;
+                    height: 41px;
+
+                    &::placeholder  {
+                        padding-left: 30px;
+                        text-transform: capitalize;
+                        font-size: 14px;
+                        font-family: 'Roboto';
+                    }
+                }
+                i {
+                    position: relative;
+                    
+                    right: 250px;
+                }
+            }
+        }
+        .user-controls {
+            display: flex;
+            
+            
+
+            .logo {
+                font-size: 19px;
+                font-family: 'Baskerville Old Face BQ';
+                margin-left: 18px;
+                margin-top: 16px;
+
+                a {
+                    color: #000000;
+                }
+                @include media-breakpoint-up('md') {
+                    display: none;
+                }
+            }
+
+            ul {
+                display: flex;
+                margin-left: 46px;
+                margin-top: 17px;
+                @include media-breakpoint-up('md') {
+                    margin-top: 5px;
+                    margin-left: 40px;
+                }
+                li {
+                    padding-right: 25px;
+                    font-size: 20px;
+                    
+                }
+            }
+        }
+    }
+
+    
+}

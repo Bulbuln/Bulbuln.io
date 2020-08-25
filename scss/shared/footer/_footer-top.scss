@@ -1,0 +1,160 @@
+.footer-top {
+    width: 100%;
+    max-height: 440px;
+    margin-top: 41px;
+    text-align: center;
+    background-color: #E8E8E8;
+    overflow: hidden;
+    @include media-breakpoint-up('md') {
+        background-color: transparent;
+        width: auto;
+        margin-top: 0;
+        margin-right: 400px;
+        overflow: visible;
+        
+        
+
+    }
+
+    .sign-newsletter {
+        @include media-breakpoint-up('md') {
+            text-transform: lowercase;
+            margin-top: 34px;
+            font-size: 22px;
+            letter-spacing: 0.33px;
+            color: #2B2B2B;
+            margin-bottom: 0;
+            white-space: nowrap;
+            font-family: 'Playfair Display';
+            
+    
+        }
+    }
+
+    .newsletter-input {
+        @include media-breakpoint-up('md') {
+            margin-top: 12px;
+            margin-bottom: 0;
+            
+            
+    
+        }
+
+        .email-input {
+            width: 261px;
+            height: 34px;
+            border: 1px solid #CCCCCC;
+            background-color: #ffffff;
+            
+    
+            &::placeholder {
+                font-family: 'Roboto';
+                font-size: 12px;
+                color: #2B2B2B;
+                padding-top: 10px;
+                padding-left: 10px;
+                @include media-breakpoint-up('md') {
+                    opacity: 0 ;
+            
+                }
+    
+            }
+        }
+
+    }
+
+    h1 {
+        font-family: 'Playfair Display';
+        font-size: 22px;
+        color: #2b2b2b;
+        padding-top: 25px;
+    }
+
+    .first-ofer {
+        font-family: 'Roboto';
+        font-size: 15px;
+        color: #2B2B2B;
+        margin-top: 24px;
+    }
+
+    .privacy-policy {
+        font-family: 'Roboto';
+        font-size: 12px;
+        color: #2B2B2B;
+        margin-top: 14px;
+
+        a {
+            color: #2b2b2b;
+            text-decoration: underline;
+        }
+    }
+
+    
+
+    button {
+        width: 75px;
+        height: 25px;
+        background-color: transparent;
+        border: 1px solid #2B2B2B;
+        text-align: center;
+        font-family: 'Roboto';
+        font-size: 12px;
+        color: #2B2B2B;
+        margin-top: 24px;
+        @include media-breakpoint-up('md') {
+            margin-top: 12px;
+    
+        }
+    }
+
+    .social-media {
+        
+        @include media-breakpoint-up('md') {
+            margin-top: 38px;
+        
+        }
+
+        .social-network {
+            color: #2b2b2b;
+            margin-top: 24px;
+            
+            
+            i {
+                padding-left: 19px;
+                font-size: 22px;
+                @include media-breakpoint-up('md') {
+                    font-size: 16px;
+                    padding-left: 14px;
+                    
+                
+                }
+            }
+        }
+    }
+    
+
+    .footer-call {
+        background-color: #ffffff;
+        display: flex;
+        justify-content: center;
+
+        p {
+            padding-top: 15px;
+            padding-left: 5px;
+            a {
+                font-family: 'Roboto';
+                font-size: 14px;
+                color: #5E5A5A;
+            }
+
+            i {
+                font-size: 14px;
+                color: #5E5A5A;
+
+            }
+        }
+    }
+    
+
+
+}
