@@ -16,7 +16,7 @@
         @include media-breakpoint-up('md') {
             width: 666px;
             height: 666px;
-            background-image: url(img/banner-secondary.png);
+            background-image: url(./../img/banner-secondary.png);
             background-size: cover;
         }
     }
