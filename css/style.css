@@ -7911,7 +7911,7 @@ ol {
       .mid-page-promo .promo-image {
         width: 666px;
         height: 666px;
-        background-image: url(img/banner-secondary.png);
+        background-image: url(./../img/banner-secondary.png);
         background-size: cover; } }
   .mid-page-promo .promo-text {
     width: 305px; }
